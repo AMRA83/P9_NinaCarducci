@@ -4,7 +4,7 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,11 @@
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 	<meta name="google-site-verification" content="hS3cJpIxpP_S1XWIm1gFM3Z-KvopFnD00KFri3A0JK0" />
 	<title>Nina Carducci photographe professionnelle basée à Bordeaux</title>
 	<meta name="description"
@@ -30,15 +30,19 @@
 			<h1 class="name">Nina Carducci</h1>
 			<nav class="nav">
 				<ul>
-					<li><a href="#about">À propos</a></li>
-					<li><a href="#gallery">Galerie</a></li>
-					<li><a href="#services">Service</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"><img src="assets/images/instagram.webp" alt="logo instagram" width="20"
-								height="20"></a></li>
-				</ul>
-			</nav>
+					<nav class="nav">
+						<ul>
+							<li><a href="#about" aria-label="À propos de moi">À propos</a></li>
+							<li><a href="#gallery" aria-label="Galerie de photos">Galerie</a></li>
+							<li><a href="#services" aria-label="Mes services">Services</a></li>
+							<li><a href="#contact" aria-label="Me contacter">Contact</a></li>
+							<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+									target="_blank" aria-label="Instagram"><img src="assets/images/instagram.webp"
+										alt="logo instagram" width="20" height="20"></a></li>
+						</ul>
+					</nav>
+
+
 		</header>
 		<section id="header">
 
@@ -115,49 +119,51 @@
 			</div>
 		</section>
 		<section id="gallery">
-			<h3 class="title">Portfolio</h3>
-			<div class="container py-3">
-				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aron-paul.webp"
-						alt="scène de concert tamisée d'une lumière rouge vue du public" loading="lazy" />
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou.webp"
-						alt="portrait d'un homme d'affaires" loading="lazy" />
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman .webp" alt="collègues de bureau"
-						loading="lazy" />
-					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing.webp" alt="mains des mariés"
-						loading="lazy" />
-					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji.webp" alt="portrait d'un homme"
-						loading="lazy" />
-					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXh.webp" alt="mariés heureux"
-						loading="lazy" />
-					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"
-						alt="portrait d'une jeune femme" loading="lazy" />
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill.webp" alt="chanteur sur une scène enfumée"
-						loading="lazy" />
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp"
-						alt="Femme souriant en openspace" loading="lazy" />
+			<h2 class="title">Portfolio</h3>
+				<div class="container py-3">
+					<div class="gallery" style="display: none">
+						<img data-gallery-tag="Concert" class="gallery-item"
+							src="./assets/images/gallery/concerts/aron-paul.webp"
+							alt="scène de concert tamisée d'une lumière rouge vue du public" loading="lazy" />
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+							src="./assets/images/gallery/entreprise/ali-morshedlou.webp"
+							alt="portrait d'un homme d'affaires" loading="lazy" />
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+							src="./assets/images/gallery/entreprise/jason-goodman .webp" alt="collègues de bureau"
+							loading="lazy" />
+						<img data-gallery-tag="Mariages" class="gallery-item"
+							src="./assets/images/gallery/mariage/hannah-busing.webp" alt="mains des mariés"
+							loading="lazy" />
+						<img data-gallery-tag="Portrait" class="gallery-item"
+							src="./assets/images/gallery/portraits/ade-tunji.webp" alt="portrait d'un homme"
+							loading="lazy" />
+						<img data-gallery-tag="Mariages" class="gallery-item"
+							src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXh.webp" alt="mariés heureux"
+							loading="lazy" />
+						<img data-gallery-tag="Portrait" class="gallery-item"
+							src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"
+							alt="portrait d'une jeune femme" loading="lazy" />
+						<img data-gallery-tag="Concert" class="gallery-item"
+							src="./assets/images/gallery/concerts/austin-neill.webp"
+							alt="chanteur sur une scène enfumée" loading="lazy" />
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+							src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp"
+							alt="Femme souriant en openspace" loading="lazy" />
+					</div>
 				</div>
-			</div>
-			<aside class="quote">
-				<figure>
-					<blockquote>
-						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
-							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
-							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
-							vérité.</p>
-					</blockquote>
-					<figcaption class="quote__author">- Richard Avedon</figcaption>
-				</figure>
-			</aside>
+				<aside class="quote">
+					<figure>
+						<blockquote>
+							<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+								qu’un
+								fait est traduit en photo, il cesse d’être un fait pour devenir une opinion.
+								L’inexactitude
+								n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
+								vérité.</p>
+						</blockquote>
+						<figcaption class="quote__author">- Richard Avedon</figcaption>
+					</figure>
+				</aside>
 		</section>
 		<section id="services">
 			<h2 class="title">Mes services</h2>
@@ -169,7 +175,7 @@
 							en Île-de-France pour réaliser vos photos</p>
 					</div>
 					<div class="service__price">
-						<h4>350€/demi journée</h4>
+						<h4>350€/demi-journée</h4>
 						<span>Matériel, déplacement inclus</span>
 					</div>
 
@@ -211,7 +217,7 @@
 	<footer id="contact">
 		<div class="container">
 			<div class="form-container">
-				<h2>Une question ? Une demande de devis ?</h2>
+				<h3>Une question ? Une demande de devis ?</h3>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
 					<label>Nom</label>
