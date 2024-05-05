@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.gallery').mauGallery({
         columns: {
             xs: 1,
@@ -13,3 +13,12 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+import CompressionPlugin from "compression-webpack-plugin";
+module.exports = {
+    plugins: [
+        new CompressionPlugin({
+            test: /\.(js|css)$/,
+        }),
+    ],
+};
