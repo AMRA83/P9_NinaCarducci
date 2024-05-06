@@ -13,12 +13,3 @@ $(document).ready(function () {
         tagsPosition: 'top'
     });
 });
-
-import CompressionPlugin from "compression-webpack-plugin";
-module.exports = {
-    plugins: [
-        new CompressionPlugin({
-            test: /\.(js|css)$/,
-        }),
-    ],
-};
